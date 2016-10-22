@@ -35,3 +35,8 @@
   position: $position;
   top: 0;
 }
+
+@mixin font-size($size) {
+  font-size: ($size * 10) + px;
+  font-size: $size + rem;
+}
