@@ -1,5 +1,18 @@
-$_blue: #3a81c9;
+$heading-font: 'Yanone Kaffeesatz', sans-serif;
+$content-font: 'Raleway', sans-serif;
 
-h1 {
-  color: blue;
-}
+$_black: #050505;
+$_white: #fff;
+$_purple: #460079;
+$_pink: #e5007e;
+
+$heading-color: $_purple;
+$content-color: $_black;
+$button-color: $_white;
+$link-color: $_pink;
+
+$link-gradient: linear-gradient(
+  120deg,
+  $_purple 30%,
+  $_pink 100%
+);

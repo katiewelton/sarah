@@ -42,13 +42,6 @@ class WPTheme extends WPBrunch {
 
   public static function style_script_includes() {
     wp_enqueue_script('jquery');
-    wp_register_style(
-      'font-awesome',
-      '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css',
-      false,
-      '4.6.3'
-    );
-    wp_enqueue_style('font-awesome');
   }
 
   public static function register_nav_menus() {

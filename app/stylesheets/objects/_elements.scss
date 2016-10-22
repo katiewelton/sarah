@@ -1,0 +1,40 @@
+html {
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $heading-color;
+  font-family: $heading-font;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+p,
+a {
+  @include font-size(1.8);
+  line-height: 1.4;
+}
+
+p {
+  color: $content-color;
+  font-family: $content-font;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  @include font-size(8);
+}
+
+h2 {
+  @include font-size(5.4);
+  margin-bottom: 20px;
+}
