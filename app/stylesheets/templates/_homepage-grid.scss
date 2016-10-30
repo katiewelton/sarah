@@ -1,0 +1,78 @@
+.top-block {
+  height: calc(100vw - 80px);
+  position: relative;
+  width: 100%;
+}
+
+.block {
+  height: calc(((100vw - 80px) / 3) - 1px);
+  position: absolute;
+
+  &-image {
+    background: grey;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.tl,
+.m,
+.br,
+.bbl {
+  width: calc(100% / 3);
+}
+
+.tr,
+.bl,
+.bbr {
+  width: calc((100% / 3) * 2);
+}
+
+.tl,
+.br {
+  height: calc((((100vw - 80px) / 3) * 2) - 1px);
+}
+
+.tl {
+  top: 0;
+  left: 0;
+  padding: 0 10px 10px 0;
+}
+
+.tr {
+  top: 0;
+  right: 0;
+  padding: 0 0 10px 10px;
+}
+
+.m {
+  @include absolute-center(absolute);
+  height: calc(((100vw - 80px) / 3) - 2px);
+  padding: 10px;
+}
+
+.bl {
+  bottom: 0;
+  left: 0;
+  padding: 10px 10px 0 0;
+}
+
+.br {
+  bottom: 0;
+  right: 0;
+  padding: 10px 0 0 10px;
+}
+
+.bbl {
+  padding-right: 10px;
+}
+
+.bbr {
+  padding-left: 10px;
+}
+
+.bottom-block {
+  height: calc((100vw - 80px) / 3);
+  margin-bottom: 40px;
+  padding-top: 20px;
+}
