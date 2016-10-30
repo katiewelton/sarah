@@ -16,8 +16,36 @@ if(have_posts()): while(have_posts()): the_post();
       <a href="#" class="btn">email: sarahtamsinwelton@gmail.com</a>
       <a href="#" class="btn">telephone: 07932370646</a>
     </div>
-
   </section>
+  <main class="home-content">
+    <div class="container">
+      <div class="top-block grid">
+        <div class="tl block">
+          <div class="block-image"></div>
+        </div>
+        <div class="tr block">
+          <div class="block-image"></div>
+        </div>
+        <div class="m block">
+          <div class="block-image"></div>
+        </div>
+        <div class="bl block">
+          <div class="block-image"></div>
+        </div>
+        <div class="br block">
+          <div class="block-image"></div>
+        </div>
+      </div>
+      <div class="bottom-block grid">
+        <div class="bbl">
+          <div class="block-image"></div>
+        </div>
+        <div class="bbr">
+          <div class="block-image"></div>
+        </div>
+      </div>
+    </div>
+  </main>
 
 <?php
 endwhile; endif;

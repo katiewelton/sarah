@@ -46,8 +46,7 @@ class WPTheme extends WPBrunch {
 
   public static function register_nav_menus() {
     register_nav_menus([
-      'main_menu' => 'Primary navigation menu in header',
-      'footer_menu' => 'Secondary navigation menu in footer'
+      'footer_menu' => 'Navigation in Footer',
     ]);
   }
 

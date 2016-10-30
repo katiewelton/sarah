@@ -1,0 +1,21 @@
+$gutter-width: 10px;
+
+.gutter-col-4 {
+  margin-left: $gutter-width;
+  margin-right: $gutter-width;
+  width: calc((100% / 3) - (#{$gutter-width} * 4 / 3));
+
+  &:nth-of-type(3n+1) {
+    margin-left: 0;
+  }
+
+  &:nth-of-type(3n+3) {
+    margin-right: 0;
+  }
+}
+
+.gutter-col-8 {
+  margin-left: $gutter-width;
+  margin-right: $gutter-width;
+  width: calc(((100% / 3) - (#{$gutter-width} * 4 / 3)) * 2);
+}

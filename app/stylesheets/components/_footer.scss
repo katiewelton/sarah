@@ -1,0 +1,31 @@
+footer {
+  background: $link-gradient;
+  height: 120px;
+  position: relative;
+  width: 100%;
+}
+
+.footer-menu {
+  @include absolute-center(absolute);
+  align-items: center;
+  display: flex;
+  font-family: $heading-font;
+  justify-content: center;
+
+  a {
+    @include font-size(1.4);
+    color: $_white;
+    margin: 0 10px;
+    position: relative;
+  }
+
+  li:first-child a::after {
+    background-color: $_white;
+    bottom: 0;
+    content: '';
+    height: 15px;
+    position: absolute;
+    right: -10px;
+    width: 1px;
+  }
+}
