@@ -1,17 +1,42 @@
+.portfolio-grid {
+  background: $_grey;
+  padding-top: 36px;
+}
+
 .top-block {
   height: calc(100vw - 80px);
   position: relative;
   width: 100%;
+
+  .block {
+    position: absolute;
+  }
 }
 
 .block {
   height: calc(((100vw - 80px) / 3) - 1px);
-  position: absolute;
+  position: relative;
 
   &-image {
     background: grey;
     height: 100%;
     width: 100%;
+  }
+
+  &-details {
+    background: $_white;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 200px;
+  }
+
+  &-title {
+    padding: 20px;
+  }
+
+  &-hover {
+    padding: 0 20px;
   }
 }
 
@@ -34,15 +59,15 @@
 }
 
 .tl {
-  top: 0;
   left: 0;
   padding: 0 10px 10px 0;
+  top: 0;
 }
 
 .tr {
-  top: 0;
-  right: 0;
   padding: 0 0 10px 10px;
+  right: 0;
+  top: 0;
 }
 
 .m {
@@ -55,12 +80,16 @@
   bottom: 0;
   left: 0;
   padding: 10px 10px 0 0;
+
+  .block-details {
+    margin: 20px 0 0 10px;
+  }
 }
 
 .br {
   bottom: 0;
-  right: 0;
   padding: 10px 0 0 10px;
+  right: 0;
 }
 
 .bbl {
@@ -69,10 +98,38 @@
 
 .bbr {
   padding-left: 10px;
+  right: 0;
 }
 
 .bottom-block {
   height: calc((100vw - 80px) / 3);
   margin-bottom: 40px;
   padding-top: 20px;
+}
+
+.tl,
+.bbl {
+  .block-details {
+    margin: 10px 0 0 10px;
+  }
+}
+
+.bl {
+  .block-details {
+    margin: 20px 0 0 10px;
+  }
+}
+
+.m,
+.br {
+  .block-details {
+    margin: 20px 0 0 20px;
+  }
+}
+
+.tr,
+.bbr {
+  .block-details {
+    margin: 10px 0 0 20px;
+  }
 }

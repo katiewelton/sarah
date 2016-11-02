@@ -34,7 +34,38 @@ h6 {
   color: $heading-color;
   font-family: $heading-font;
   font-weight: 300;
+}
+
+h1,
+h2 {
   margin-bottom: 10px;
+}
+
+h1 {
+  @include font-size(8);
+}
+
+h2 {
+  @include font-size(5.4);
+  margin-bottom: 20px;
+}
+
+h3,
+h4 {
+  color: $_plum;
+  text-transform: uppercase;
+}
+
+h3 {
+  @include font-size(4.4);
+  line-height: 34px;
+  padding-bottom: 36px;
+  text-align: center;
+}
+
+h4 {
+  @include font-size(2.2);
+  font-weight: 400;
 }
 
 p,
@@ -43,7 +74,8 @@ a {
   line-height: 1.4;
 }
 
-p {
+p,
+ul {
   color: $content-color;
   font-family: $content-font;
   margin-bottom: 20px;
@@ -54,11 +86,19 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  @include font-size(8);
-}
+li {
+  line-height: 2;
+  padding-left: 6px;
+  position: relative;
 
-h2 {
-  @include font-size(5.4);
-  margin-bottom: 20px;
+  &::before {
+    background-color: $_plum;
+    border-radius: 50%;
+    content: '';
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: 8px;
+    width: 2px;
+  }
 }
