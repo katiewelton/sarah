@@ -1,4 +1,5 @@
-@import 'tools/gridz',
+@import 'tools/reset',
+        'tools/gridz',
         'tools/gutter-gridz',
         'tools/variables',
         'tools/mixins';
@@ -8,7 +9,7 @@
 
 @import 'components/hero-banner',
         'components/logo',
-        'components/buttons',
+        'components/btns',
         'components/footer';
 
 @import 'templates/homepage-grid';
