@@ -1,22 +1,26 @@
 module.exports = {
+  paths: {
+    watched: ['app', 'vendor']
+  },
   files: {
     javascripts: {
       joinTo: {
-        'js/vendor.js': /^(vendor\/javascripts)/,
+        'js/vendor.js': /^(?!app)/,
         'js/app.js': /^(app\/javascripts)/
       }
     },
     stylesheets: {
       joinTo: {
         'css/vendor.css': /^(vendor\/stylesheets)/,
-        'css/app.css': 'app/stylesheets/styles.scss'
+        'css/app.css': /^(app\/stylesheets)/
       }
     }
   },
   plugins: {
     postcss: {
       processors: [
-        require('autoprefixer')(['last 5 versions']),
+        require('postcss-import'),
+        require('autoprefixer')(['last 2 versions', 'iOS 8'])
       ]
     },
     sass: {
@@ -25,10 +29,6 @@ module.exports = {
     }
   },
   modules: {
-    wrapper: false,
-    definition: false
-  },
-  npm: {
-    enabled: false
+    wrapper: false
   }
 };
