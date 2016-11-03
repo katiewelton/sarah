@@ -84,12 +84,12 @@ class WPTheme extends WPBrunch {
 
  public static function include_additional_files() {
     $template_url = get_template_directory();
-    // new CustomMetaboxes();
-    // new CustomPostTypes();
+    new CustomMetaboxes();
+    new CustomPostTypes();
 
     if(is_admin()) {
-      // $cdAdmin = new cdAdmin();
-      // $cdAdmin->hooks();
+      $swAdmin = new swAdmin();
+      $swAdmin->hooks();
     }
   }
 
