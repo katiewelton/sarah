@@ -32,11 +32,21 @@
   }
 
   &-title {
-    padding: 20px;
+    padding: 15px;
   }
 
   &-hover {
-    padding: 0 20px;
+    max-height: 0;
+    opacity: 0;
+    padding: 0 15px;
+    transition: max-height .6s ease, opacity .6s ease;
+  }
+
+  &:hover {
+    .block-hover {
+      opacity: 1;
+      max-height: 600px;
+    }
   }
 }
 
